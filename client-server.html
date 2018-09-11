@@ -1,0 +1,335 @@
+<html>
+<head>
+    <title>KEYBOARD</title>
+    <style>
+        .column{
+            width: 10%;
+            display: block;
+            margin-bottom: 50px;
+        }
+        form {
+            margin:0px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="column">
+    <h1>Server</h1>
+    <form name="keyboard">
+        <textarea type="text" name="Input" id="input1" style="margin-bottom: -1px; font-family: 'Times New Roman'"></textarea>
+        <button type="button" name="kirim1" style="padding-right: 50px" onclick="document.getElementById('input2').value = document.getElementById('input1').value;document.getElementById('input1').value=''">Kirim</button>
+
+    </form>
+    <table bgcolor="black" cellpadding="1" cellspacing="1">
+        <br>
+        <tr>
+            <td colspan="2"><input type="button" name=" Esc " value=" Esc "></td>
+            <td><input type="button" name=" F1 " value=" F1 "></td>
+            <td><input type="button" name=" F2 " value=" F2 "></td>
+            <td><input type="button" name=" F3 " value=" F3 "></td>
+            <td><input type="button" name=" F4 " value=" F4 "></td>
+            <td><input type="button" name=" F5 " value=" F5 "></td>
+            <td><input type="button" name=" F6 " value=" F6 "></td>
+            <td><input type="button" name=" F7 " value=" F7 "></td>
+            <td><input type="button" name=" F8 " value=" F8 "></td>
+            <td><input type="button" name=" F9 " value=" F9"></td>
+            <td><input type="button" name=" F10 " value=" F10 "></td>
+            <td><input type="button" name=" F11 " value=" F11 "></td>
+            <td><input type="button" name=" F12 " value=" F12 "></td>
+            <td><input type="button" name=" PrtSc " value=" PrtSc "></td>
+            <td><input type="button" name=" Pause " value=" Pause "></td>
+            <td><input type="button" name=" Ins " value=" Ins "></td>
+            <td><input type="button" name=" Delete " value=" Del "></td>
+        </tr>
+
+        <tr>
+            <td>
+                <button>~<br>`</button>
+            </td>
+            <td>
+                <button>!<br>1</button>
+            </td>
+            <td>
+                <button>@<br>2</button>
+            </td>
+            <td>
+                <button>#<br>3</button>
+            </td>
+            <td>
+                <button>$<br>4</button>
+            </td>
+            <td>
+                <button>%<br>5</button>
+            </td>
+            <td>
+                <button>^<br>6</button>
+            </td>
+            <td>
+                <button>&<br>7</button>
+            </td>
+            <td>
+                <button>*<br>8</button>
+            </td>
+            <td>
+                <button>(<br>9</button>
+            </td>
+            <td>
+                <button>)<br>0</button>
+            </td>
+            <td>
+                <button>_<br>-</button>
+            </td>
+            <td>
+                <button>+<br>=</button>
+            </td>
+            <td colspan="3" align="center"><input type="button" name=" Backspace " value="   <--Backspace  "
+                                                  OnClick="keyboard.Input.value =''"></td>
+            <td colspan="2" align="center"><input type="button" name=" Home " value=" Home "></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="button" name=" Tab " value=" Tab       "></td>
+            <td><input type="button" name="Q" value="Q" OnClick="keyboard.Input.value += 'q'"></td>
+            <td><input type="button" name=" W   " value=" W " OnClick="keyboard.Input.value += 'w'"></td>
+            <td><input type="button" name=" E " value=" E " OnClick="keyboard.Input.value += 'e'"></td>
+            <td><input type="button" name=" R " value=" R " OnClick="keyboard.Input.value += 'r'"></td>
+            <td><input type="button" name=" T " value=" T " OnClick="keyboard.Input.value += 't'"></td>
+            <td><input type="button" name=" Y " value=" Y " OnClick="keyboard.Input.value += 'y'"></td>
+            <td><input type="button" name=" U " value=" U " OnClick="keyboard.Input.value += 'u'"></td>
+            <td><input type="button" name=" I " value=" I " OnClick="keyboard.Input.value += 'i'"></td>
+            <td><input type="button" name=" O " value=" O " OnClick="keyboard.Input.value += 'o'"></td>
+            <td><input type="button" name=" p" value=" P " OnClick="keyboard.Input.value += 'p'"></td>
+            <td>
+                <button>{<br>[</button>
+            </td>
+            <td>
+                <button>}<br>]</button>
+            </td>
+            <td>
+                <button>|<br>\</button>
+            </td>
+            <td colspan="3" align="center"><input type="button" name=" Pg Up " value=" Pg Up "></td>
+        </tr>
+
+        <tr>
+            <td colspan="2"><input type="button" name=" Caps Lock " value="Caps Lock"></td>
+            <td align="center"><input type="button" name=" A   " value=" A " OnClick="keyboard.Input.value += 'a'"></td>
+            <td align="center"><input type="button" name=" S   " value=" S " OnClick="keyboard.Input.value += 's'"></td>
+            <td align="center"><input type="button" name=" D " value=" D " OnClick="keyboard.Input.value += 'd'"></td>
+            <td align="center"><input type="button" name=" F  " value=" F " OnClick="keyboard.Input.value += 'f'"></td>
+            <td><input type="button" name=" G   " value=" G " OnClick="keyboard.Input.value += 'g'"></td>
+            <td><input type="button" name=" H   " value=" H " OnClick="keyboard.Input.value += 'h'"></td>
+            <td><input type="button" name=" J " value=" J " OnClick="keyboard.Input.value += 'j'"></td>
+            <td><input type="button" name=" K  " value=" K " OnClick="keyboard.Input.value += 'k'"></td>
+            <td><input type="button" name=" L   " value=" L " OnClick="keyboard.Input.value += 'l'"></td>
+            <td><input type="button" name=" ;   " value=" ; " OnClick="keyboard.Input.value += ';'"></td>
+            <td><input type="button" name=" ' " value=" ' "></td>
+            <td colspan="3" align="center"><input type="button" name=" ENTER " value="ENTER <--------           "></td>
+            <td colspan="2" align="center"><input type="button" name=" Pg Dn " value=" Pg Dn "></td>
+        </tr>
+
+        <tr>
+            <td colspan="3"><input type="button" name=" Shift   " value="SHIFT                  "></div></td>
+<td>
+    <div align="center">
+        <input type="button" name=" Z   " value=" Z " OnClick="keyboard.Input.value += 'z'"></div>
+</td>
+<td>
+    <div align="center">
+        <input type="button" name=" X   " value=" X " OnClick="keyboard.Input.value += 'x'"></div>
+</td>
+<td>
+    <div align="center">
+        <input type="button" name=" C " value=" C " OnClick="keyboard.Input.value += 'c'">
+    </div>
+</td>
+<td><input type="button" name=" V   " value=" V " OnClick="keyboard.Input.value += 'v'"></td>
+<td><input type="button" name=" B " value=" B " OnClick="keyboard.Input.value += 'b'"></td>
+<td><input type="button" name=" N  " value=" N " OnClick="keyboard.Input.value += 'n'"></td>
+<td><input type="button" name=" M  " value=" M " OnClick="keyboard.Input.value += 'm'"></td>
+<td><input type="button" name="  <  " value=" < " OnClick="keyboard.Input.value += '<'"></td>
+<td><input type="button" name=" >   " value=" > " OnClick="keyboard.Input.value += '>'"></td>
+<td><input type="button" name=" / " valign="bottom" value=" / ? "></td>
+<td colspan="3" align="center"><input type="button" name=" SHIFT  " value=" SHIFT                       ">
+</td>
+<td colspan="2" align="center"><input type="button" name=" END " value=" END "></td>
+</tr>
+
+<tr>
+    <td colspan="2"><input type="button" name=" Ctrl   " value="Ctrl"></td>
+    <td><input type="button" name=" [Fn]   " value="[Fn]"></td>
+    <td><input type="button" name=" WIN " value=" WIN "></td>
+    <td><input type="button" name=" ALT   " value=" ALT "></td>
+    <td colspan="5" align="center"><input type="button" name=" SPASI "
+                                          value="SPASI                                       "
+                                          OnClick="keyboard.Input.value += ' '"></td>
+    <td><input type="button" name=" ALT   " value=" ALT "></td>
+    <td><input type="button" name=" MOU  " value=" MOU "></td>
+    <td><input type="button" name=" Ctrl   " value=" Ctrl "></td>
+    <td><input type="button" name=" TOP  " value=" TOP "></td>
+    <td><input type="button" name=" LEFT  " value=" LEFT"></td>
+    <td><input type="button" name=" RIGHT  " value=" RIGHT "></td>
+    <td colspan="2"><input type="button" name=" BOTTOM  " value=" BOTTOM "></td>
+</tr>
+</table>
+</div>
+<div class="column">
+    <h1>Client</h1>
+    <form name="keyboard2">
+        <textarea type="text" name="input2" id="input2" style="margin-bottom: -1px; font-family: 'Times New Roman'"></textarea>
+        <button type="button" name="kirim2" style="padding-right: 50px" onclick="document.getElementById('input1').value = document.getElementById('input2').value;document.getElementById('input2').value=''">Kirim</button>
+</form>
+    <table bgcolor="black" cellpadding="1" cellspacing="1">
+        <br>
+        <tr>
+            <td colspan="2"><input type="button" name=" Esc " value=" Esc "></td>
+            <td><input type="button" name=" F1 " value=" F1 "></td>
+            <td><input type="button" name=" F2 " value=" F2 "></td>
+            <td><input type="button" name=" F3 " value=" F3 "></td>
+            <td><input type="button" name=" F4 " value=" F4 "></td>
+            <td><input type="button" name=" F5 " value=" F5 "></td>
+            <td><input type="button" name=" F6 " value=" F6 "></td>
+            <td><input type="button" name=" F7 " value=" F7 "></td>
+            <td><input type="button" name=" F8 " value=" F8 "></td>
+            <td><input type="button" name=" F9 " value=" F9"></td>
+            <td><input type="button" name=" F10 " value=" F10 "></td>
+            <td><input type="button" name=" F11 " value=" F11 "></td>
+            <td><input type="button" name=" F12 " value=" F12 "></td>
+            <td><input type="button" name=" PrtSc " value=" PrtSc "></td>
+            <td><input type="button" name=" Pause " value=" Pause "></td>
+            <td><input type="button" name=" Ins " value=" Ins "></td>
+            <td><input type="button" name=" Delete " value=" Del "></td>
+        </tr>
+
+        <tr>
+            <td>
+                <button>~<br>`</button>
+            </td>
+            <td>
+                <button>!<br>1</button>
+            </td>
+            <td>
+                <button>@<br>2</button>
+            </td>
+            <td>
+                <button>#<br>3</button>
+            </td>
+            <td>
+                <button>$<br>4</button>
+            </td>
+            <td>
+                <button>%<br>5</button>
+            </td>
+            <td>
+                <button>^<br>6</button>
+            </td>
+            <td>
+                <button>&<br>7</button>
+            </td>
+            <td>
+                <button>*<br>8</button>
+            </td>
+            <td>
+                <button>(<br>9</button>
+            </td>
+            <td>
+                <button>)<br>0</button>
+            </td>
+            <td>
+                <button>_<br>-</button>
+            </td>
+            <td>
+                <button>+<br>=</button>
+            </td>
+            <td colspan="3" align="center"><input type="button" name=" Backspace " value="   <--Backspace  "
+                                                  OnClick="keyboard2.input2.value =''"></td>
+            <td colspan="2" align="center"><input type="button" name=" Home " value=" Home "></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="button" name=" Tab " value=" Tab       "></td>
+            <td><input type="button" name="Q" value="Q" OnClick="keyboard2.input2.value += 'q'"></td>
+            <td><input type="button" name=" W   " value=" W " OnClick="keyboard2.input2.value += 'w'"></td>
+            <td><input type="button" name=" E " value=" E " OnClick="keyboard2.input2.value += 'e'"></td>
+            <td><input type="button" name=" R " value=" R " OnClick="keyboard2.input2.value += 'r'"></td>
+            <td><input type="button" name=" T " value=" T " OnClick="keyboard2.input2.value += 't'"></td>
+            <td><input type="button" name=" Y " value=" Y " OnClick="keyboard2.input2.value += 'y'"></td>
+            <td><input type="button" name=" U " value=" U " OnClick="keyboard2.input2.value += 'u'"></td>
+            <td><input type="button" name=" I " value=" I " OnClick="keyboard2.input2.value += 'i'"></td>
+            <td><input type="button" name=" O " value=" O " OnClick="keyboard2.input2.value += 'o'"></td>
+            <td><input type="button" name=" p" value=" P " OnClick="keyboard2.input2.value += 'p'"></td>
+            <td>
+                <button>{<br>[</button>
+            </td>
+            <td>
+                <button>}<br>]</button>
+            </td>
+            <td>
+                <button>|<br>\</button>
+            </td>
+            <td colspan="3" align="center"><input type="button" name=" Pg Up " value=" Pg Up "></td>
+        </tr>
+
+        <tr>
+            <td colspan="2"><input type="button" name=" Caps Lock " value="Caps Lock"></td>
+            <td align="center"><input type="button" name=" A   " value=" A " OnClick="keyboard2.input2.value += 'a'"></td>
+            <td align="center"><input type="button" name=" S   " value=" S " OnClick="keyboard2.input2.value += 's'"></td>
+            <td align="center"><input type="button" name=" D " value=" D " OnClick="keyboard2.input2.value += 'd'"></td>
+            <td align="center"><input type="button" name=" F  " value=" F " OnClick="keyboard2.input2.value += 'f'"></td>
+            <td><input type="button" name=" G   " value=" G " OnClick="keyboard2.input2.value += 'g'"></td>
+            <td><input type="button" name=" H   " value=" H " OnClick="keyboard2.input2.value += 'h'"></td>
+            <td><input type="button" name=" J " value=" J " OnClick="keyboard2.input2.value += 'j'"></td>
+            <td><input type="button" name=" K  " value=" K " OnClick="keyboard2.input2.value += 'k'"></td>
+            <td><input type="button" name=" L   " value=" L " OnClick="keyboard2.input2.value += 'l'"></td>
+            <td><input type="button" name=" ;   " value=" ; " OnClick="keyboard2.input2.value += ';'"></td>
+            <td><input type="button" name=" ' " value=" ' "></td>
+            <td colspan="3" align="center"><input type="button" name=" ENTER " value="ENTER <--------           "></td>
+            <td colspan="2" align="center"><input type="button" name=" Pg Dn " value=" Pg Dn "></td>
+        </tr>
+
+        <tr>
+            <td colspan="3"><input type="button" name=" Shift   " value="SHIFT                  "></div></td>
+<td>
+    <div align="center">
+        <input type="button" name=" Z   " value=" Z " OnClick="keyboard2.input2.value += 'z'"></div>
+</td>
+<td>
+    <div align="center">
+        <input type="button" name=" X   " value=" X " OnClick="keyboard2.input2.value += 'x'"></div>
+</td>
+<td>
+    <div align="center">
+        <input type="button" name=" C " value=" C " OnClick="keyboard2.input2.value += 'c'">
+    </div>
+</td>
+<td><input type="button" name=" V   " value=" V " OnClick="keyboard2.input2.value += 'v'"></td>
+<td><input type="button" name=" B " value=" B " OnClick="keyboard2.input2.value += 'b'"></td>
+<td><input type="button" name=" N  " value=" N " OnClick="keyboard2.input2.value += 'n'"></td>
+<td><input type="button" name=" M  " value=" M " OnClick="keyboard2.input2.value += 'm'"></td>
+<td><input type="button" name="  <  " value=" < " OnClick="keyboard2.input2.value += '<'"></td>
+<td><input type="button" name=" >   " value=" > " OnClick="keyboard2.input2.value += '>'"></td>
+<td><input type="button" name=" / " valign="bottom" value=" / ? "></td>
+<td colspan="3" align="center"><input type="button" name=" SHIFT  " value=" SHIFT                       ">
+</td>
+<td colspan="2" align="center"><input type="button" name=" END " value=" END "></td>
+</tr>
+
+<tr>
+    <td colspan="2"><input type="button" name=" Ctrl   " value="Ctrl"></td>
+    <td><input type="button" name=" [Fn]   " value="[Fn]"></td>
+    <td><input type="button" name=" WIN " value=" WIN "></td>
+    <td><input type="button" name=" ALT   " value=" ALT "></td>
+    <td colspan="5" align="center"><input type="button" name=" SPASI "
+                                          value="SPASI                                       "
+                                          OnClick="keyboard2.input2.value += ' '"></td>
+    <td><input type="button" name=" ALT   " value=" ALT "></td>
+    <td><input type="button" name=" MOU  " value=" MOU "></td>
+    <td><input type="button" name=" Ctrl   " value=" Ctrl "></td>
+    <td><input type="button" name=" TOP  " value=" TOP "></td>
+    <td><input type="button" name=" LEFT  " value=" LEFT"></td>
+    <td><input type="button" name=" RIGHT  " value=" RIGHT "></td>
+    <td colspan="2"><input type="button" name=" BOTTOM  " value=" BOTTOM "></td>
+</tr>
+</table>
+</div>
+</body>
+</html>
